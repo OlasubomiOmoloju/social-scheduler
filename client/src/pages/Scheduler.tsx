@@ -89,7 +89,7 @@ const Scheduler = () => {
                             ) : (
                                 <label className="flex items-center justify-center gap-2 p-5 py-10 border-2 border-dashed border-slate-200 rounded-xl cursor-pointer hover:border-red-300 hover:bg-red-50/30 transition-all group ">
                                     <span className="text-sm text-slate-500 group-hover:text-red-600 transition-colors">Click to upload image or video</span>
-                                    <input type="file" accept="image/*,video" className="hidden" onChange={(e)=>e.target.files?.[0] && setMediaFile(e.target.files[0])} />
+                                    <input type="file" accept="image/*,video/*" className="hidden" onChange={(e)=>e.target.files?.[0] && setMediaFile(e.target.files[0])} />
                                 </label>
                             )}
                         </div>
