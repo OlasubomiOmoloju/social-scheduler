@@ -1,4 +1,4 @@
-import { AlertCircleIcon, CheckCheckIcon, PlusIcon, UnplugIcon } from "lucide-react";
+import { AlertCircleIcon, CheckCircle, PlusIcon, UnplugIcon } from "lucide-react";
 import { PLATFORMS } from "../assets/assets";
 
 interface AccountListProps {
@@ -45,7 +45,7 @@ const AccountList = ({accounts, onDisconnect}: AccountListProps ) =>{
                         <div className="flex items-center gap-1.5 shrink-0">
                         {account.status === 'connected' ? (
                             <> 
-                                <CheckCheckIcon className="size-4 text-emerald-500"/>
+                                <CheckCircle className="size-4 text-emerald-500"/>
                                 <span className="text-xs text-emerald-600">Connected</span>
                             </>
                         ): (
